@@ -14,7 +14,7 @@ declare global {
 	}
 }
 
-export const authOptions: AuthOptions = {
+const authOptions: AuthOptions = {
 	// Configure one or more authentication providers
     // https://next-auth.js.org/configuration/providers/oauth#built-in-providers
 	providers: [
