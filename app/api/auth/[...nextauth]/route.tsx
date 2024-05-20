@@ -22,7 +22,8 @@ export const authOptions: AuthOptions = {
 		AzureADProvider({
 			clientId: process.env.AZURE_AD_CLIENT_ID,
 			clientSecret: process.env.AZURE_AD_CLIENT_SECRET,
-            // "For instance, when the intended access is for a personal account, the tenant ID should not be provided."
+            // "For instance, when the intended access is for a personal account,
+            // the tenant ID should not be provided."
 			// tenantId: process.env.AZURE_AD_TENANT_ID,
 		}),
 	],
