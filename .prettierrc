@@ -1,0 +1,8 @@
+{
+	"semi": true,
+	"useTabs": true,
+	"singleQuote": false,
+	"printWidth": 100,
+	"pluginSearchDirs": ["."],
+	"overrides": [{ "files": "*.tsx" }]
+}
