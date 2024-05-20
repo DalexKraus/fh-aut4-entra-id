@@ -48,15 +48,6 @@ function ProfileComponent() {
             <p className="mt-8 max-w-3xl text-xl">
                 Your email address is <b>{session?.user?.email || "Invalid email"}</b>
             </p>
-
-            {/* Display the user's profile picture */}
-            <div className="mt-8">
-                <img
-                    src={session?.user?.image || ""}
-                    alt="Profile picture"
-                    className="w-24 h-24 rounded-full"
-                />
-    		</div>
         </div>
 	);
 }
