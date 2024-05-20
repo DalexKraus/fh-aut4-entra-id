@@ -7,9 +7,11 @@ import AzureADProvider from "next-auth/providers/azure-ad";
 declare global {
 	namespace NodeJS {
 		interface ProcessEnv {
-			AZURE_AD_CLIENT_ID: string;
+            AZURE_AD_CLIENT_ID: string;
 			AZURE_AD_CLIENT_SECRET: string;
 			AZURE_AD_TENANT_ID: string;
+            // Deployments require a secret to be used to hash tokens, sign cookies and generate cryptographic keys.
+            SECRET: string;
 		}
 	}
 }
@@ -27,6 +29,7 @@ const authOptions: AuthOptions = {
 			// tenantId: process.env.AZURE_AD_TENANT_ID,
 		}),
 	],
+    secret: process.env.SECRET,
     session: {
         maxAge: 12 * 60 * 60, // 12 hours
         strategy: "jwt" // Use JSON Web Tokens for session management
