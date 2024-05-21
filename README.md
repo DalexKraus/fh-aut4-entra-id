@@ -20,6 +20,9 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
+## Slides
+The slides of this presentation can be viewed [here](https://github.com/DalexKraus/fh-aut4-entra-id/blob/main/slides.html).
+
 ## References
 * https://nextjs.org/docs/pages/api-reference/create-next-app
 * https://next-auth.js.org/getting-started/example#add-api-route
